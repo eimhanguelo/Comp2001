@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section DynamicMenuItems {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">User</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="Index">Profile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Trail" asp-action="Index">Trail</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="UserProfile" asp-action="Index">UserProfile</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="TrailComment" asp-action="Index">TrailComment</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="TrailCommentsView" asp-action="Index">TrailCommentsView</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
+    </li>
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h2>@ViewBag.EmailSession</h2>
+    <h2>@ViewBag.PasswordSession</h2>
+    <h2>@ViewBag.RoleSession</h2>
+    <h2>@ViewBag.UserIdSession</h2>
+
+</div>
